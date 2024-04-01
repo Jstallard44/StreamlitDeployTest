@@ -7,6 +7,7 @@ st.markdown("Use this Streamlit app to make your own scatterplot about penguins!
 
 penguin_file = st.file_uploader("Select Your Local Penguins CSV (default provided)")
 
+@st.cache_data()
 def load_file(penguin_file):
     time.sleep(5)
 
